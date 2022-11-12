@@ -1,3 +1,46 @@
+TODO
+====
+ - [ ] Make new arch folder
+   - [ ] VEDisassembler
+   - [ ] VEInstPrinter
+   - [ ] VEMapping
+   - [ ] VEMappingInsn
+   - [ ] VEModule
+ - [ ] Integrate:
+   - [ ] cs.c
+   - [ ] cstool/cstool.c
+   - [ ] cstool/cstool_ve.c: print the architecture specific details
+   - [ ] include/capstone/capstone.h
+   - [ ] include/capstone/ve.h: create this file to export all specifics about the new architecture
+ - [ ] Compile:
+   - [ ] CMakeLists.txt
+   - [ ] Makefile
+   - [ ] config.mk
+ - [ ] Tests:
+   - [ ] tests/Makefile
+   - [ ] tests/test_basic.c
+   - [ ] tests/test_detail.c
+   - [ ] tests/test_iter.c
+   - [ ] tests/test_ve.c
+   - [ ] suite/fuzz/fuzz_disasm.c: add the architecture and its modes to the list of fuzzed platforms
+   - [ ] suite/capstone_get_setup.c
+   - [ ] suite/MC/newarch/mode.mc: samples
+   - [ ] suite/test_corpus.py: correspondence between architecture and mode as text and architecture number for fuzzing
+ - [ ] Bindings:
+   - [ ] bindings/Makefile
+   - [ ] bindings/const_generator.py: add the header file and the architecture
+   - [ ] bindings/python/Makefile
+   - [ ] bindings/python/capstone/__init__.py
+   - [ ] bindings/python/capstone/ve.py: define the python structures
+   - [ ] bindings/python/capstone/ve_const.py: generate this file
+   - [ ] bindings/python/test_ve.py: create a basic decoding test
+   - [ ] bindings/python/test_all.py
+ - [ ] Docs:
+   - [ ] README.md
+   - [ ] HACK.txt
+   - [ ] CREDITS.txt: add your name
+ 
+
 Capstone Engine
 ===============
 
